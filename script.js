@@ -1,18 +1,23 @@
-window.addEventListener("load", function(){
+// $(window).load(function(){
+//     $('.popup-container').show();
 
-setTimeout(
+//     $('.close-popup').click(function(){
+//       $('.popup-container').hide();
+//     });
+//   });
 
-function open(event)
-{
 
-document.querySelector(".popup").style.
-
-},
-
-display = "block";
-
-1000
+window.addEventListener("load",function(){
+	setTimeout(
+		function open (event){
+			document.querySelector(".popup-container").style.display="block";
+		},8000)
 });
-document.querySelector("#close").addEventListener (
-	"click", function(){
-document.querySelector(".popup").style.display= "none";});
+$('.open-popup').click(function(){
+    $('.popup-container').show();
+  });
+
+  $('.close-popup').click(function(){
+    $('.popup-container').hide();
+  });
+
